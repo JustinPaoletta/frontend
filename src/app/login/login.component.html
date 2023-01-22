@@ -1,0 +1,18 @@
+<div class="center">
+    <form [formGroup]="loginForm">
+        <h1>WELCOME</h1>
+        <mat-form-field>
+            <mat-label>Username</mat-label>
+            <input matInput formControlName="username" />
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input
+                matInput
+                type="password"
+                formControlName="password"
+                autocomplete="off" />
+        </mat-form-field>
+        <button mat-flat-button color="primary" (click)="login()">LOGIN</button>
+    </form>
+</div>
